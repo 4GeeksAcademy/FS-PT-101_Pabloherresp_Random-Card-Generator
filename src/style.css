@@ -3,3 +3,27 @@
 body{
     background: white;
 }
+
+.estructuraPrincipal{
+    width: 30vw;
+}
+
+.miCarta{
+    border-radius: 5%;
+    font-family: "Times New Roman";
+}
+
+#cardValue{
+    font-size: 15vw;
+}
+#paloTop, #paloBottom{
+    font-size: 5vw;
+}
+
+.paloRojo{
+    color: red;
+}
+
+.paloNegro{
+    color: black;
+}

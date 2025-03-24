@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -14,18 +14,38 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg-success">
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    
+    <div class="container-fluid">
+      <div class="mt-5 mx-auto estructuraPrincipal">
+        <div class="fs-4 headerCard mb-3">
+          <span class="text-light" id="timerValue">10</span>
+          <button type="button" class="btn btn-info ms-5" id="timer">
+            <span class="ms-auto me-2"> The timer is </span><span class="text-dark" id="timerStatus">off</span>
+          </button>
+        </div>
+        <div class="card miCarta mb-3" id="cartaDiv">
+          <div class="row px-3">
+            <p class="display-3 text-start paloNegro" id="paloTop"></p>
+          </div>
+          <div class="row">
+            <p class="display-1 text-center" id="cardValue"></p>
+          </div>
+          <div class="row px-3">
+            <p class="display-3 text-end paloNegro" id="paloBottom"></p>
+          </div>
+        </div>
+        
+        <button type="button" class="btn btn-info" id="newCard">Nueva carta</button>
+        <div class="input-group my-3">
+          <span class="input-group-text pe-3" id="basic-addon1">Width (px)</span>
+          <input type="number" class="form-control" aria-describedby="basic-addon1" id="widthInput" placeholder="Enter value in px" autocomplete="off" step="10" min="0" value="320">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon2">Height (px)</span>
+          <input type="number" class="form-control" aria-describedby="basic-addon2" id="heightInput" placeholder="Enter value in px" autocomplete="off" step="10" min="0" value="400">
+        </div>
       </div>
     </div>
 
